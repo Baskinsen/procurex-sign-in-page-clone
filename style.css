@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 0;
+}
+
+.sign-up-header {
+    background-color: #365bd4;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.sign-up-header::before{
+    content: "";
+    position: absolute;
+    width: 27%;
+    background-color: #2346b9;
+    height: 45%;
+    transform: skewX(55deg);
+    top: 45dvh;
+    left: 0;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.sign-up-header::after {
+    content: "";
+    position: absolute;
+    width: 27%;
+    background-color: #5ad7f3;
+    height: 45%;
+    transform: skewX(55deg);
+    top: 65dvh;
+    left:-5dvw;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.sign-up-header div{
+    width: 100%;
+    max-width: 300px;
+    text-align: start;
+    margin-left: 10dvw;
+    display: grid;
+    gap: 30px;
+    z-index: 2;
+}
+
+.sign-up-header div h1 {
+    width: 400px;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.sign-up-header div h1 span {
+    color: #2eccd2;
+}
+
+.sign-up-header div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.sign-up-form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 150px 50px;
+}
+
+.sign-up-form-header {
+    display: flex;
+    border-bottom: 1px solid #b0b4b7;
+    padding-bottom: 20px;
+}
+
+.sign-up-form-header h1 {
+    font-size: 1.7rem;
+    color: black;
+    margin: 0;
+}
+
+.sign-up-form-header img {
+    margin-left: auto;
+    align-self: center;
+    height: 30px;
+}
+
+.sign-up-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign-up-form form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign-up-form form>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign-up-form>form>div>div:has(a) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sign-up-form>form>div>div>a {
+    align-self: center;
+    text-decoration: none;
+    color: #085098;
+    font-size: 18px;
+}
+
+.sign-up-form form div label {
+    font-size: 1rem;
+    color: #757779;
+}
+
+.sign-up-form form div input {
+    height: 3rem;
+    border: 1px solid #b0b4b7;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.sign-up-form form div input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+.button-container {
+    width: 30%;
+}
+button {
+    padding: 20px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #95edcb;
+    color: white;
+    font-size: 16px;
+}
